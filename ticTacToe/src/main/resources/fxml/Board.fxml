@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.tse.ticTacToe.viewer.controller.GameController">
+   <children>
+      <GridPane fx:id="gameBoard" layoutY="30.0" prefHeight="450.0" prefWidth="450.0">
+      </GridPane>
+      <MenuBar prefHeight="30.0" prefWidth="450.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Game">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onStartNewGame" text="New Game" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text fx:id="gameStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="200" x="250.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0" />
+   </children>
+</AnchorPane>
